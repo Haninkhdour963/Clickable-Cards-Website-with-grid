@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clickable Card Website Using grid</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    a.card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+      transition: box-shadow 0.3s ease, transform 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transform: translateY(-5px);
+      cursor: pointer;
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+      color: #2c3e50;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔗 Clickable Cards Website with grid </h1>
+  <div class="grid">
+    <a href="https://haninkhdour963.github.io/portfolio/" class="card-link">
+      <div class="card">
+        <h2>My Profile with html+css</h2>
+          <p>Clicking this entire box will take you to my portfolio </p>
+      </div>
+    </a>
+     <a href="https://haninkhdour963.github.io/portfolio-react/" class="card-link">
+      <div class="card">
+        <h2>My Profile with react</h2>
+          <p>Clicking this entire box will take you to Page react portfolio</p>
+      </div>
+    </a>
+      <a href="https://github.com/Haninkhdour963/Full-Stack-Web-Application" class="card-link">
+      <div class="card">
+        <h2>My Fullstack project with php+laravel</h2>
+          <p>Clicking this entire box will take you to php +laravel Full-Stack-Web-Application</p>
+      </div>
+    </a>
+  </div>
+</body>
+</html>
